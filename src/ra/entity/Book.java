@@ -87,11 +87,11 @@ public class Book {
         System.out.println("Nhap vao ten sach ");
         this.bookName = scanner.nextLine();
         System.out.println("Gia nhap ");
-        this.importPrice = scanner.nextDouble();
+        this.importPrice = Double.parseDouble(scanner.nextLine());
         System.out.println("Nhap vao gia xuat");
-        this.exportPrice = scanner.nextDouble();
+        this.exportPrice = Double.parseDouble(scanner.nextLine());
         System.out.println("Nhap nam san xuat");
-        this.year = scanner.nextInt();
+        this.year = Integer.parseInt(scanner.nextLine());
     }
 
     public  void  displayData(){

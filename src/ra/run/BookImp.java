@@ -24,12 +24,12 @@ public class BookImp {
                     "8. Thống kê số lượng sách theo tác giả\n" +
                     "9. Thoát");
             System.out.println("Moi ban chon 1  - 9");
-            int choice = scanner.nextInt();
+            int choice = Integer.parseInt(scanner.nextLine());
 
             switch (choice){
                 case 1:
                     System.out.println("Moi nhap vao so luonh muon them ");
-                    int n = scanner.nextInt();
+                    int n = Integer.parseInt(scanner.nextLine());
                     for (int i = 0; i < n; i++) {
                         // khowir tao doi tuong sach
                         Book book = new Book();
@@ -52,6 +52,8 @@ public class BookImp {
                     }
                     break;
                 case 4:
+                    System.out.println("Nhap vao ten tac gia");
+                    String authorName = scanner.nextLine();
                     // buoc 1 nhap vao tu khoa can tim
 
                     // buoc 2 chay vong lap kiem tra xem cos ten trung khong neu trung thi hien thi thong tin
